@@ -3,10 +3,19 @@ public class Persona {
     def edad;    
     
     public String saluda(){
-        return "Hola me llamo $nombre y tengo $edad años."
+        "Hola me llamo $nombre y tengo $edad años."
+    }
+    
+    String toString(){
+        "'$nombre, $edad años'"
     }            
 }
 
-Persona persona = new Persona(nombre:"Juan", edad:21);
+def persona = new Persona(nombre:"Juan", edad:21);
 
-println persona.saluda()
+def listaPersonas = [persona,
+                     new Persona(nombre:"Eliza",edad:20), 
+                     new Persona(nombre:"Luis", edad:65),
+                     new Persona(edad:"32",nombre:"Paco")]
+
+listaPersonas.each{ println it.saluda() }
