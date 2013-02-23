@@ -5,10 +5,11 @@ public class Persona {
     public static void main(String[] args){
         Persona persona = new Persona();
         
-        persona.setNombre("Juan")
-        persona.setEdad(21)
+        persona.nombre = "Juan"
+        persona.edad = 21
+        println persona.nombre
         
-        System.out.println(persona.saluda())
+        println persona.saluda()
     }
     
     public String saluda(){
@@ -16,10 +17,12 @@ public class Persona {
     }
     
     public String getNombre(){
+        println "getNombre"
         return this.nombre
     }
     
     public void setNombre(String nombre){
+        println "setNombre"
         this.nombre = nombre
     }
 
@@ -28,6 +31,7 @@ public class Persona {
     }
     
     public void setEdad(Integer edad){
+        println "setEdad"
         this.edad = edad
     }    
 }
