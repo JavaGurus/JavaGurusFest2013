@@ -3,7 +3,7 @@ public class Persona {
     def edad;    
     
     public String saluda(){
-        return "Hola me llamo " + nombre + " y tengo " + edad + " años."
+        return "Hola me llamo $nombre y tengo $edad años."
     }            
 }
 
