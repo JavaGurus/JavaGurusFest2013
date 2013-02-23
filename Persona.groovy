@@ -1,6 +1,6 @@
 public class Persona {
-    String nombre;
-    Integer edad;
+    def nombre;
+    def edad;
     
     public static void main(String[] args){
         Persona persona = new Persona();
