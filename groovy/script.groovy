@@ -11,11 +11,8 @@ public class Persona {
     }            
 }
 
-def persona = new Persona(nombre:"Juan", edad:21);
+def mapa = [nombre:"Pepe",edad:"34"]
 
-def listaPersonas = [persona,
-                     new Persona(nombre:"Eliza",edad:20), 
-                     new Persona(nombre:"Luis", edad:65),
-                     new Persona(edad:"32",nombre:"Paco")]
+def persona2 = mapa as Persona
 
-listaPersonas.each{ println it.saluda() }
+println persona2.saluda()
